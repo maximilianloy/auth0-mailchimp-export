@@ -11,7 +11,7 @@ var getUsers = function (config, allUsers, perPage, pageNumber) {
   var USER_SEARCH_MGMT_TOKEN = config.USER_SEARCH_MGMT_TOKEN;
 
   var deferred = Q.defer();
-  var searchCriteria = { search_engine: 'v3', per_page: perPage, page: pageNumber, fields: 'email,name', include_fields: 'true' };
+  var searchCriteria = { search_engine: 'v3', per_page: perPage, page: pageNumber, fields: 'email,given_name,family_name', include_fields: 'true' };
 
   var options = {
     method: 'GET',
